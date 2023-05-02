@@ -15,4 +15,30 @@ public class falling : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.ComparingTag("Ground"))
+        {
+            getScore();
+        }
+    }
+
+    void OnCollisionEnter(Collision otherObj)
+    {
+        if (otherObj.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject, .5f);
+        }
+    }
+
+    void OnCollisionEnter(Collision otherObj)
+    {
+        if (otherObj.gameObject.tag == "character")
+        {
+            Destroy(gameObject, .5f);
+        }
+    }
+
+
 }
