@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  bullet: {fileID: 1825925089555172826}
 --- !u!4 &414741317
 Transform:
   m_ObjectHideFlags: 0
@@ -1520,3 +1521,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694cdceaa53e8984bae11559c90bde4a, type: 3}
+--- !u!1 &1825925089555172826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1825925089208951179, guid: 694cdceaa53e8984bae11559c90bde4a, type: 3}
+  m_PrefabInstance: {fileID: 1825925089555172825}
+  m_PrefabAsset: {fileID: 0}
