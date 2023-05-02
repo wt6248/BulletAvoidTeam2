@@ -5,6 +5,7 @@ using UnityEngine;
 public class generateBullet : MonoBehaviour
 {
     public int score = 0;
+    public GameObject bulletasdf;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class generateBullet : MonoBehaviour
 
     void bullet()
     {
-        Instantiate(bullet);
+        Instantiate(bulletasdf);
     }
 
     public void getScore()
