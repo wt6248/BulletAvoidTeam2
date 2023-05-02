@@ -30,4 +30,11 @@ public class generateBullet : MonoBehaviour
         score++;
     }
     
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.ComparingTag("Ground"))
+        {
+            getScore();
+        }
+    }
+    
 }
